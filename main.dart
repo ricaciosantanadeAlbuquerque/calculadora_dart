@@ -146,3 +146,5 @@ void soma({required double valor1, required double valor2}) {
 void subtracao({required double valor1, required double valor2}) {
   print('O resultado da subtração ${valor1 - valor2}');
 }
+
+void multiplicacao({required double valor1,required double valor2}){}
