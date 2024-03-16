@@ -48,8 +48,7 @@ void escolha({required int op}) {
           try {
             double valor1 = double.parse(valorEntrada1);
             double valor2 = double.parse(valorEntrada2);
-            print(valor1);
-            print(valor2);
+            soma(valor1: valor1, valor2: valor2);
           } catch (e) {
             throw Exception('ERRO! valores $valorEntrada1 e $valorEntrada2 não são numéricos');
           }
@@ -142,5 +141,5 @@ void escolha({required int op}) {
 // soma
 
 void soma({required double valor1, required double valor2}) {
-  print('');
+  print('O resultado da soma é ${valor1 + valor2}');
 }
