@@ -3,8 +3,6 @@ import 'dart:io';
 void main(List<String> args) {}
 
 int menu() {
-  var op;
-
   print('========== Menu ==========');
 
   print('[1] para somar');
@@ -12,9 +10,26 @@ int menu() {
   print('[3] para multiplicar');
   print('[4] para dividir');
   print('[5] para sair');
-  op = stdin.readLineSync();
+  String? op = stdin.readLineSync();
 
-  
+  // tratamento do valor de entrada.
 
-  return 10;
+  if (op != null) {
+    if (op.isNotEmpty) {
+      try {
+        
+        int num1 = int.parse(op);
+
+        return num1;
+      } catch (e) {
+        throw Exception('ERRO!! o valor $op não é numérico ');
+      }
+    } else {
+      print('Erro!!! o Valor está vazio.');
+      exit(0);
+    }
+  } else {
+    print('ERRO! valor nulo, O programa será encerrado ');
+    exit(0);
+  }
 }
