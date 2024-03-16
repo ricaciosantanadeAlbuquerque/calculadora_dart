@@ -120,6 +120,7 @@ void escolha({required int op}) {
           try {
             double valor1 = double.parse(valorEntrada1);
             double valor2 = double.parse(valorEntrada2);
+            divisao(valor1: valor1, valor2: valor2);
           } catch (e) {
             throw Exception('ERRO! valores $valorEntrada1 e $valorEntrada2 não são numéricos');
           }
@@ -150,4 +151,8 @@ void subtracao({required double valor1, required double valor2}) {
 
 void multiplicacao({required double valor1, required double valor2}) {
   print('O resultado da multiplicação ${valor1 * valor2}');
+}
+
+void divisao({required double valor1, required double valor2}) {
+  print('O resultado da Divisão ${valor1 / valor2}');
 }
