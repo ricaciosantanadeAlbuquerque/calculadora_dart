@@ -149,5 +149,5 @@ void subtracao({required double valor1, required double valor2}) {
 }
 
 void divisao({required double valor1, required double valor2}) {
-  print('O resultado da Divisão ${valor1 - valor2}');
+  print('O resultado da Divisão ${valor1 / valor2}');
 }
