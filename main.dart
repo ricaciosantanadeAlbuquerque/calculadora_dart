@@ -143,3 +143,7 @@ void escolha({required int op}) {
 void soma({required double valor1, required double valor2}) {
   print('O resultado da soma é ${valor1 + valor2}');
 }
+
+void subtracao(){
+  
+}
