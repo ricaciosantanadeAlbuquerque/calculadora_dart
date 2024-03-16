@@ -38,14 +38,99 @@ int menu() {
 void exolha({required int op}) {
   switch (op) {
     case 1:
+      print("Digite o primeiro valor");
+      String? valorEntrada1 = stdin.readLineSync();
+      print('Digite o segundo valor');
+      String? valorEntrada2 = stdin.readLineSync();
+
+      if (valorEntrada1 != null && valorEntrada2 != null) {
+        if (valorEntrada1.isNotEmpty && valorEntrada2.isNotEmpty) {
+          try {
+            double valor1 = double.parse(valorEntrada1);
+            double valor2 = double.parse(valorEntrada2);
+          } catch (e) {
+            throw Exception('ERRO! valores $valorEntrada1 e $valorEntrada2 não são numéricos');
+          }
+        } else {
+          print('ERRO! valor vazio o programa será encerrado !');
+          exit(0);
+        }
+      } else {
+        print('ERRO! valor nulo o programa será encerrado !');
+        exit(0);
+      }
       break;
     case 2:
+      print("Digite o primeiro valor");
+      String? valorEntrada1 = stdin.readLineSync();
+      print('Digite o segundo valor');
+      String? valorEntrada2 = stdin.readLineSync();
+
+      if (valorEntrada1 != null && valorEntrada2 != null) {
+        if (valorEntrada1.isNotEmpty && valorEntrada2.isNotEmpty) {
+          try {
+            double valor1 = double.parse(valorEntrada1);
+            double valor2 = double.parse(valorEntrada2);
+          } catch (e) {
+            throw Exception('ERRO! valores $valorEntrada1 e $valorEntrada2 não são numéricos');
+          }
+        } else {
+          print('ERRO! valor vazio o programa será encerrado !');
+          exit(0);
+        }
+      } else {
+        print('ERRO! valor nulo o programa será encerrado !');
+        exit(0);
+      }
       break;
     case 3:
+      print("Digite o primeiro valor");
+      String? valorEntrada1 = stdin.readLineSync();
+      print('Digite o segundo valor');
+      String? valorEntrada2 = stdin.readLineSync();
+
+      if (valorEntrada1 != null && valorEntrada2 != null) {
+        if (valorEntrada1.isNotEmpty && valorEntrada2.isNotEmpty) {
+          try {
+            double valor1 = double.parse(valorEntrada1);
+            double valor2 = double.parse(valorEntrada2);
+          } catch (e) {
+            throw Exception('ERRO! valores $valorEntrada1 e $valorEntrada2 não são numéricos');
+          }
+        } else {
+          print('ERRO! valor vazio o programa será encerrado !');
+          exit(0);
+        }
+      } else {
+        print('ERRO! valor nulo o programa será encerrado !');
+        exit(0);
+      }
       break;
     case 4:
+      print("Digite o primeiro valor");
+      String? valorEntrada1 = stdin.readLineSync();
+      print('Digite o segundo valor');
+      String? valorEntrada2 = stdin.readLineSync();
+
+      if (valorEntrada1 != null && valorEntrada2 != null) {
+        if (valorEntrada1.isNotEmpty && valorEntrada2.isNotEmpty) {
+          try {
+            double valor1 = double.parse(valorEntrada1);
+            double valor2 = double.parse(valorEntrada2);
+          } catch (e) {
+            throw Exception('ERRO! valores $valorEntrada1 e $valorEntrada2 não são numéricos');
+          }
+        } else {
+          print('ERRO! valor vazio o programa será encerrado !');
+          exit(0);
+        }
+      } else {
+        print('ERRO! valor nulo o programa será encerrado !');
+        exit(0);
+      }
       break;
     case 5:
-      break;
+      print('Encerrando o programa');
+      exit(0);
   }
 }
