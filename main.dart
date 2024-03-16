@@ -34,3 +34,18 @@ int menu() {
     exit(0);
   }
 }
+
+void exolha({required int op}) {
+  switch (op) {
+    case 1:
+      break;
+    case 2:
+      break;
+    case 3:
+      break;
+    case 4:
+      break;
+    case 5:
+      break;
+  }
+}
