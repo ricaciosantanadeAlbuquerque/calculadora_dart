@@ -1,6 +1,8 @@
 import 'dart:io';
 
-void main(List<String> args) {}
+void main(List<String> args) {
+  print(menu());
+}
 
 int menu() {
   print('========== Menu ==========');
@@ -17,7 +19,6 @@ int menu() {
   if (op != null) {
     if (op.isNotEmpty) {
       try {
-        
         int num1 = int.parse(op);
 
         return num1;
