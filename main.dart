@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(List<String> args) {
-  escolha(op:menu());
+  escolha(op: menu());
 }
 
 int menu() {
@@ -137,4 +137,10 @@ void escolha({required int op}) {
       print('Encerrando o programa');
       exit(0);
   }
+}
+
+// soma
+
+void soma({required double valor1, required double valor2}) {
+  print('');
 }
