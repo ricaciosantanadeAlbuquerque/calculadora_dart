@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(List<String> args) {
-  print(menu());
+  escolha(op:menu());
 }
 
 int menu() {
@@ -35,7 +35,7 @@ int menu() {
   }
 }
 
-void exolha({required int op}) {
+void escolha({required int op}) {
   switch (op) {
     case 1:
       print("Digite o primeiro valor");
@@ -48,6 +48,8 @@ void exolha({required int op}) {
           try {
             double valor1 = double.parse(valorEntrada1);
             double valor2 = double.parse(valorEntrada2);
+            print(valor1);
+            print(valor2);
           } catch (e) {
             throw Exception('ERRO! valores $valorEntrada1 e $valorEntrada2 não são numéricos');
           }
@@ -71,6 +73,8 @@ void exolha({required int op}) {
           try {
             double valor1 = double.parse(valorEntrada1);
             double valor2 = double.parse(valorEntrada2);
+            print(valor1);
+            print(valor2);
           } catch (e) {
             throw Exception('ERRO! valores $valorEntrada1 e $valorEntrada2 não são numéricos');
           }
